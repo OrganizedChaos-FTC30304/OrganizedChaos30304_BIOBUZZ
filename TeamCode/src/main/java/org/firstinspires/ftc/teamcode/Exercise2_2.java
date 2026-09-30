@@ -1,0 +1,22 @@
+package org.firstinspires.ftc.teamcode;
+
+import com.qualcomm.robotcore.eventloop.opmode.OpMode;
+import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
+
+@TeleOp(name = "Ex2_2")
+public class Exercise2_2 extends OpMode {
+    @Override
+    public void init() {
+            String myName = "Coach Dave";
+            int grade = 99;
+
+            telemetry.addData("Hello", myName);
+            telemetry.addData("Grade", grade);
+
+    }
+
+    @Override
+    public void loop() {
+
+    }
+}
