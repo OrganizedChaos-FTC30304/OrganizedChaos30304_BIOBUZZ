@@ -1,6 +1,6 @@
 package org.firstinspires.ftc.teamcode;
 
-public class Robotlocation {
+public class RobotLocation {
     double angle;
 
     public double getHeading() {
