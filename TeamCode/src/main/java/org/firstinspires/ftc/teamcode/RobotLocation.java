@@ -16,7 +16,7 @@ public class RobotLocation {
     }
 
     @Override public String toString() {
-        return "RobotLocation: angle (" + angle + ")"
+        return "RobotLocation: angle (" + angle + ")";
     }
 
     public void turn(double angleChange) {
@@ -24,5 +24,14 @@ public class RobotLocation {
     }
     public void setAngle(double angle) {
         this.angle = angle;
+    }
+    //This next line of code is the excercise point in 5.6
+    public void getAngle(double x) {
+    }
+    public void getX(double x) {
+    }
+    public void changeX(double change) {
+    }
+    public void setX(double x) {
     }
 }
