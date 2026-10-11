@@ -1,5 +1,8 @@
 package org.firstinspires.ftc.teamcode;
 
+import com.qualcomm.robotcore.eventloop.opmode.OpMode;
+import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
+
 public class RobotLocation {
     double angle;
     double x;
@@ -44,5 +47,14 @@ public class RobotLocation {
 
     // These next few lines are excercise 5.6 (b)
 
-    
+    public void loop() {
+        if (gamepad1.dpad_left) {
+            robotLocation.changeX(-0.1);
+        } else if (gamepad1.dpad_right) {
+            robotLocation.changeX(0.1);
+        }
+    }
+
+    telemetry.addData("Robot X position", robotLocation.getX());
+    telemetry.update();
 }
