@@ -23,14 +23,12 @@ public class IfElseIfOpMode extends OpMode {
 
         @Override
         public void init() {
-        telemetry.addData("Hello","Leila");
+            telemetry.addData("Hello","Leila");
         }
-    //Caption is a label, a value is a number, word, and/or result.
+        //Caption is a label, a value is a number, word, and/or result.
         @Override
         public void loop() {
 
         }
     }
 }
-
-
