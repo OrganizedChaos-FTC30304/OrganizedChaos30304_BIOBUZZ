@@ -10,9 +10,9 @@ public class HelloWorld extends OpMode {
 
     @Override
     public void init() {
-    telemetry.addData("Hello","World");
+        telemetry.addData("Hello","World");
     }
-//Caption is a label, a value is a number, word, and/or result.
+    //Caption is a label, a value is a number, word, and/or result.
     @Override
     public void loop() {
 
