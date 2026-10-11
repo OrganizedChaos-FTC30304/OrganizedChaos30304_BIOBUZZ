@@ -2,6 +2,12 @@ package org.firstinspires.ftc.teamcode;
 
 public class RobotLocation {
     double angle;
+    double x;
+
+    public RobotLocation(double angle) {
+        this.angle = angle;
+        this.x = 0.0; // Confirms value
+    }
 
     public double getHeading() {
         double angle = this.angle;
@@ -25,7 +31,7 @@ public class RobotLocation {
     public void setAngle(double angle) {
         this.angle = angle;
     }
-    //This next line of code is the excercise point in 5.6
+    //These next few lines are the excercise point in 5.6 (a)
     public void getAngle(double x) {
     }
     public void getX(double x) {
@@ -33,5 +39,10 @@ public class RobotLocation {
     public void changeX(double change) {
     }
     public void setX(double x) {
+        this.x = x;
     }
+
+    // These next few lines are excercise 5.6 (b)
+
+    
 }
