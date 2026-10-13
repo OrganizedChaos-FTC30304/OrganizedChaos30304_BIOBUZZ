@@ -36,19 +36,9 @@ public class RobotLocation extends OpMode {
     public void setAngle(double angle) {
         this.angle = angle;
     }
-    //These next few lines are the excercise point in 5.6 (a)
-    public void getAngle(double x) {
-    }
-    public void getX(double x) {
-    }
-    public void changeX(double change) {
-    }
-    public void setX(double x) {
-        this.x = x;
-    }
 
     // These next few lines are excercise 5.6 (b)
-
+/
     public void loop() {
         if (gamepad1.dpad_left) {
             robotLocation.changeX(-0.1);
