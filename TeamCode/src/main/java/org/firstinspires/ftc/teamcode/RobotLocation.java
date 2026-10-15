@@ -38,7 +38,8 @@ public class RobotLocation extends OpMode {
     }
 
     // These next few lines are excercise 5.6 (b)
-/
+/*
+I turned it into a comment because it was interfering with 5.6 excercise b. and giving errors.
     public void loop() {
         if (gamepad1.dpad_left) {
             robotLocation.changeX(-0.1);
@@ -50,3 +51,5 @@ public class RobotLocation extends OpMode {
     telemetry.addData("Robot X position", robotLocation.getX());
     telemetry.update();
 }
+
+ */

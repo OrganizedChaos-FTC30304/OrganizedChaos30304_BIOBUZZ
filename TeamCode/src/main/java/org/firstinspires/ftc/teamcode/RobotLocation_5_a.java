@@ -3,12 +3,12 @@ package org.firstinspires.ftc.teamcode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
 @TeleOp()
-public class RobotLocation_5_2 {
+public class RobotLocation_5_a {
 
     double angle;
     double x;
 
-    public RobotLocation_5_2(double angle) {
+    public RobotLocation_5_a(double angle) {
         this.angle = angle;
     }
 
@@ -41,6 +41,7 @@ public class RobotLocation_5_2 {
     public double getAngle() {
         return angle;
     }
+    //This is starting excercise a of 5.6
     public void getAngle(double x) {
     }
     public void getX(double x) {
@@ -49,4 +50,5 @@ public class RobotLocation_5_2 {
     }
     public void setX(double x) {
         this.x = x;
+    }
 }
