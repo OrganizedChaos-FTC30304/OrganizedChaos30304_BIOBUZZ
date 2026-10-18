@@ -18,5 +18,5 @@ public class MathOpMode_3_3 extends OpMode {
 
         telemetry.addData("'Left joystick y' and 'right joystick y' are two different joysticks. This is left joystick y", gamepad1.left_stick_y);
         telemetry.addData("And this is right joystick y", gamepad1.right_stick_y);
-            }
+    }
 }
