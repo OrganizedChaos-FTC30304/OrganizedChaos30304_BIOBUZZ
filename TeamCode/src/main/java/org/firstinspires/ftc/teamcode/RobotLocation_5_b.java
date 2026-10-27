@@ -54,7 +54,4 @@ public class RobotLocation_5_b {
     }
      */
 
-    public void loop() {
-        if gamepad1.dpad_left
-    }
 }

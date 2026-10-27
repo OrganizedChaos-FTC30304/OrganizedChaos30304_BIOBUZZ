@@ -14,12 +14,21 @@ public class UseRobotLocationOpMode extends OpMode{
 
     @Override
     public void loop() {
-        if(gamepad1.a) {
+        if (gamepad1.a) {
             robotLocation.turn(0.1);
-        }
-        else if(gamepad1.b) {
+        } else if (gamepad1.b) {
             robotLocation.turn(-0.1);
         }
+
+        //5.6 b:
+
+        if (gamepad1.dpad_left) {
+            robotLocation.changeX(-0.1);
+        }
+        if (gamepad1.dpad_right) {
+            robotLocation.changeX(0.1);
+        }
+
         telemetry.addData("Location", robotLocation);
         telemetry.addData("Heading", robotLocation.getHeading());
         telemetry.addData("Angle:", robotLocation.angle);
