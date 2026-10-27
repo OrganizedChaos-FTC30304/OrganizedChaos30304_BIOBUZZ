@@ -9,6 +9,7 @@ public class RobotLocation_5_a {
     double x;
 
     public RobotLocation_5_a(double angle) {
+
         this.angle = angle;
     }
 
@@ -43,12 +44,17 @@ public class RobotLocation_5_a {
     }
     //This is starting excercise a of 5.6
     public void getAngle(double x) {
+        return;
     }
     public void getX(double x) {
+        return;
     }
     public void changeX(double change) {
+        return;
     }
     public void setX(double x) {
         this.x = x;
+        return;
     }
+
 }
