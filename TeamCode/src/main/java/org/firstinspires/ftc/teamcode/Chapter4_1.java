@@ -5,7 +5,7 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
 @TeleOp
 
-public class chapter4 extends OpMode{
+public class Chapter4_1 extends OpMode{
     @Override
     public void init() {
 
@@ -13,6 +13,15 @@ public class chapter4 extends OpMode{
 
     @Override
     public void loop() {
+
+        double forwardSpeed = gamepad1.left_stick_y;
+
+        if(!gamepad1.a) {
+            gamepad1.left_stick_y *= 0.5;
+        }
+
+        telemetry.addData("Forward Speed", forwardSpeed);
+
 
     }
 }
