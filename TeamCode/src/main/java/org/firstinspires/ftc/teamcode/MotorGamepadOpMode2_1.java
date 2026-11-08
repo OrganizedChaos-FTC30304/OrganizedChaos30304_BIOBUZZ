@@ -1,0 +1,33 @@
+package org.firstinspires.ftc.teamcode;
+
+import com.qualcomm.robotcore.eventloop.opmode.OpMode;
+import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
+
+import org.firstinspires.ftc.teamcode.mechanisims.ProgrammingBoard4;
+
+@TeleOp()
+public class MotorGamepadOpMode2_1 extends OpMode {
+    ProgrammingBoard4 board = new ProgrammingBoard4();
+
+    @Override
+    public void init() {
+
+        board.init(hardwareMap);
+    }
+
+    public double squareInputWithSign(double input) {
+        if (input >= 0) {
+            return input * input;
+        } else {
+            return -(input * input);
+        }
+    }
+
+    @Override
+    public void loop() {
+        double motorSpeed = gamepad1.left_stick_y;
+        board.setMotorSpeed(motorSpeed);
+        telemetry.addData("Motor speed", motorSpeed);
+        telemetry.addData("Motor rotations", board.getMotorRotations());
+    }
+}
