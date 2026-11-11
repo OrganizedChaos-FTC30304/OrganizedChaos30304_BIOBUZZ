@@ -1,17 +1,10 @@
 package org.firstinspires.ftc.teamcode;
 
-import com.qualcomm.robotcore.eventloop.opmode.OpMode;
-import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
-
-@TeleOp()
-public class RobotLocation extends OpMode {
-    @Override
+public class RobotLocation{
     double angle;
-    double x;
 
     public RobotLocation(double angle) {
         this.angle = angle;
-        this.x = 0.0; // Confirms value
     }
 
     public double getHeading() {
@@ -26,7 +19,9 @@ public class RobotLocation extends OpMode {
         return angle;
     }
 
-    @Override public String toString() {
+    @Override
+    public String toString() {
+
         return "RobotLocation: angle (" + angle + ")";
     }
 
@@ -37,19 +32,5 @@ public class RobotLocation extends OpMode {
         this.angle = angle;
     }
 
-    // These next few lines are excercise 5.6 (b)
-/*
-I turned it into a comment because it was interfering with 5.6 excercise b. and giving errors.
-    public void loop() {
-        if (gamepad1.dpad_left) {
-            robotLocation.changeX(-0.1);
-        } else if (gamepad1.dpad_right) {
-            robotLocation.changeX(0.1);
-        }
-    }
-
-    telemetry.addData("Robot X position", robotLocation.getX());
-    telemetry.update();
 }
 
- */

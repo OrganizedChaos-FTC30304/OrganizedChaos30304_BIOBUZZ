@@ -7,7 +7,7 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 public class UseRobotLocationOpMode extends OpMode{
 
     RobotLocation robotLocation = new RobotLocation(0);
-    
+
     @Override
     public void init() {
         robotLocation.setAngle(0);
@@ -21,24 +21,8 @@ public class UseRobotLocationOpMode extends OpMode{
             robotLocation.turn(-0.1);
         }
 
-        //5.6 b:
-
-        if (gamepad1.dpad_left) {
-            robotLocation.changeX(-0.1);
-        }
-        if (gamepad1.dpad_right) {
-            robotLocation.changeX(0.1);
-        }
-
-        if (gamepad1.dpad_left) {
-            robotLocation.changeY(-0.1);
-        }
-        if (gamepad1.dpad_right) {
-            robotLocation.changeY(0.1);
-        }
 
         telemetry.addData("Location", robotLocation);
         telemetry.addData("Heading", robotLocation.getHeading());
-        telemetry.addData("Angle:", robotLocation.angle);
     }
 }

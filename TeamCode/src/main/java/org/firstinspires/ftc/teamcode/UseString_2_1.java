@@ -13,15 +13,17 @@ public class UseString_2_1 extends OpMode {
         //This is PascalCase
     }
 
-        @Override
-        public void loop() {
-            int x = 5;
-            //x is visible here
-            {
-                int y = 4;
-                //x and y are visible here since it is INSIDE the x '{}'
-            }
-            //Only x is visible here since it is now outside of the '{}' that y is in
+    @Override
+    public void loop() {
+        int x = 5;
+        //x is visible here
+        {
+            int y = 4;
+            //x and y are visible here since it is INSIDE the x '{}'
         }
+        //Only x is visible here since it is now outside of the '{}' that y is in
+    }
+
+}
 
 

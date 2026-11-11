@@ -1,9 +1,9 @@
-package org.firstinspires.ftc.teamcode;
+package org.firstinspires.ftc.teamcode.mechanisims;
 
 import com.qualcomm.robotcore.hardware.DigitalChannel;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
-public class ProgrammingBoard1 {
+public class ProgrammingBoard2 {
     private DigitalChannel touchSensor;
 
     public void init(HardwareMap hwMap) {
@@ -11,7 +11,7 @@ public class ProgrammingBoard1 {
         touchSensor.setMode(DigitalChannel.Mode.INPUT);
     }
 
-    public boolean getTouchSensorState() {
-        return touchSensor.getState();
+    public boolean isTouchSensorPressed() {
+        return !touchSensor.getState();
     }
 }
