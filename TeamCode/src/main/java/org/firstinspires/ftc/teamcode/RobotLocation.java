@@ -26,17 +26,11 @@ public class RobotLocation {
     public String toString() {
         return "RobotLocation: angle (" + angle + ")";
     }
-    /*
-    "String" is a name for this chunk of code, while "toString()" is a function.
 
-    public void  turn(double angleChange) {
+    public void turn(double angleChange) {
         angle += angleChange;
     }
 
-    /*
-    "+=" adds two (maybe more?) numbers and keeps the product. In this example,
-    the angle (likely in degrees) is added to the amount of change in the angles.
-     */
     public void setAngle(double angle) {
         this.angle = angle;
     }

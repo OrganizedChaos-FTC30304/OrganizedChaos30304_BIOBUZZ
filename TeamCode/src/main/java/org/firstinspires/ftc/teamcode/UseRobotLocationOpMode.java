@@ -4,9 +4,8 @@ import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
 @TeleOp
-public class UseRobotLocationOpMode extends OpMode {
+public class UseRobotLocationOpMode  extends OpMode {
     RobotLocation robotLocation = new RobotLocation(0);
-
     @Override
     public void init() {
         robotLocation.setAngle(0);
@@ -24,3 +23,4 @@ public class UseRobotLocationOpMode extends OpMode {
         telemetry.addData("Heading", robotLocation.getHeading());
     }
 }
+

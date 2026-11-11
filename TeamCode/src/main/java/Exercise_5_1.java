@@ -1,9 +1,7 @@
-package org.firstinspires.ftc.teamcode;
-
-public class Exercise_5_2_a {
+public class Exercise_5_1 {
     double angle;
 
-    public Exercise_5_2_a(double angle) {
+    public Exercise_5_1(double angle) {
         this.angle = angle;
     }
     /*
@@ -39,5 +37,9 @@ public class Exercise_5_2_a {
      */
     public void setAngle(double angle) {
         this.angle = angle;
+    }
+
+    double getAngle() {
+        return angle;
     }
 }
