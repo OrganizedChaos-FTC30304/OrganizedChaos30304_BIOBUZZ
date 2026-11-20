@@ -12,8 +12,6 @@ public class Passthrough {
         leftServo = hwMap.get(CRServo.class, "left_passthrough_servo");
         rightServo = hwMap.get(CRServo.class, "right_passthrough_servo");
 
-        // Reverse one servo so both physically spin in the same direction relative to the robot
-        rightServo.setDirection(DcMotorSimple.Direction.REVERSE);
 
         // Ensure servos are stopped initially
         stop();
