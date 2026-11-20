@@ -37,7 +37,8 @@ public class Drivetrain {
         backLeftMotor.setDirection(DcMotor.Direction.REVERSE);
 
         //Setting up the IMU
-        //DESPERATELY need to fix this, HELP, fix direction of the control hub after 'LogoFacingDirection:'
+
+        //HOPELESSLY---DESPERATELY need to fix this, HELP, fix direction of the control hub after 'LogoFacingDirection:'
         RevHubOrientationOnRobot RevOrientation = new RevHubOrientationOnRobot(RevHubOrientationOnRobot.LogoFacingDirection.UP, RevHubOrientationOnRobot.UsbFacingDirection.UP);
         imu.initialize(new IMU.Parameters(RevOrientation));
     }
