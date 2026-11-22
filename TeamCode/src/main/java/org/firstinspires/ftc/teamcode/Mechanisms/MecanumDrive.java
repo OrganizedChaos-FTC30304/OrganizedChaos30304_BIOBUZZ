@@ -15,10 +15,10 @@ public class MecanumDrive {
     private IMU imu;
 
     public void init(HardwareMap hwMap) {
-        frontRight = hwMap.get(DcMotor.class, "rightFrontDriveMotor");
-        frontLeft = hwMap.get(DcMotor.class, "leftFrontDriveMotor");
-        backLeft = hwMap.get(DcMotor.class, "leftRearDriveMotor");
-        backRight = hwMap.get(DcMotor.class, "rightRearDriveMotor");
+        frontRight = hwMap.get(DcMotor.class, "FrontRightWheel");
+        frontLeft = hwMap.get(DcMotor.class, "FrontLeftWheel");
+        backLeft = hwMap.get(DcMotor.class, "BackLeftWheel");
+        backRight = hwMap.get(DcMotor.class, "BackRightWheel");
 
         frontRight.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
         frontLeft.setMode(DcMotor.RunMode.RUN_USING_ENCODER);

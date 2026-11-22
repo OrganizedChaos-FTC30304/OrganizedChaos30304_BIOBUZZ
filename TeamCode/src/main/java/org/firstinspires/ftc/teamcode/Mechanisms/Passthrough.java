@@ -9,8 +9,8 @@ public class Passthrough {
     private CRServo rightServo;
 
     public void init(HardwareMap hwMap) {
-        leftServo = hwMap.get(CRServo.class, "left_passthrough_servo");
-        rightServo = hwMap.get(CRServo.class, "right_passthrough_servo");
+        leftServo = hwMap.get(CRServo.class, "BottomPassthrough");
+        rightServo = hwMap.get(CRServo.class, "TopPassthrough");
 
 
         // Ensure servos are stopped initially
